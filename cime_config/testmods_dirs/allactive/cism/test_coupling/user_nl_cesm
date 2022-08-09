@@ -1,0 +1,78 @@
+The Community Earth System Model (CESM) is a fully-coupled, global climate model that provides state-of-the-art computer simulations of the Earth's past, present, and future climate states.
+
+CESM2 is the most current release and contains support for CMIP6(Coupled Model Intercomparison Project Phase 6) experiment configurations.
+
+Coupled Model Intercomparison Project Phase 6
+
+CESM2.2 is a new developmental version of the CESM2 family, containing many new developments in several component models Some of these new advancements include: 
+
+1. Atmosphere CAM
+Development of the model was led by the Atmosphere Model Working Group (AMWG). Development of the Whole Atmosphere Community Climate Model (WACCM, a capability of CAM) was led by the Whole Atmosphere Working Group (WAWG). Development of CAM-Chem was led by the Chemistry Climate Working Group (CCWG).
+
+The Community Atmosphere Model (CAM) is the latest in a series of global atmosphere models developed at NCAR for the weather and climate research communities. CAM also serves as the atmospheric component of the Community Climate System Model (CCSM).
+
+-AMWG
+The Atmosphere Model Working Group (AMWG) is a broad collection of researchers across university and federal institutions engaged in atmospheric science research using the Community Earth System Model (CESM). The overarching goal is to continually develop the Community Atmosphere Model (CAM) in order to periodically provide new versions for use by the wider CESM community.
+
+-WACCM
+The Whole Atmosphere Community Climate Model (WACCM) is a comprehensive numerical model, spanning the range of altitude from the Earth's surface to the thermosphere. The development of WACCM is an inter-divisional collaboration that unifies certain aspects of the upper atmospheric modeling of HAO, the middle atmosphere modeling and atmospheric chemistry of ACOM, and the tropospheric dynamical modeling of CGD, using the NCAR Community Earth System Model (CESM) as a common numerical framework. WACCM-X extends WACCM to the upper thermosphere, and includes processes important to the ionosphere.
+
+-CAM-chem
+CAM-chem now includes the capability to run the regionally refined grid with the Spectral Element dynamical core (CAM-chem-SE-RR), also referred to as MUSICA-V0 (https://wiki.ucar.edu/display/MUSICA/MUSICA+Home). The CAM-chem compsets now support resolutions for uniform grid SE, and SE with CSLAM. Compsets for physics-side nudging to MERRA meteorological reanalyses are now provided, in addition to the specified dynamics compset. The wet scavenging of aerosols by convective clouds has been updated. The Henry's Law constants used to determine wet and dry deposition of gas-phase species have been updated. Compsets for using the MOZART-TS2 chemistry are included.
+
+2. Land CLM
+New land features that are part of this release include:
+
+FV3 grids and several variable resolution grids needed for CAM, with initial condition files provided for some of them
+Updates to CIME and introduction of the NUOPC cap that are consistent with other CESM components
+A new parameterization that allows for an option to simulate two bioenergy crops (switchgrass and miscanthus)
+Adding support for more general use of setting numbers of subscale vegetation types
+Moving hard coded parameters to the CTSM parameter file
+Support for use of CTSM in numerical weather prediction (NWP)
+The release also addresses several answer changing bug fixes that were present in the released CLM5.0 code and previous versions of CESM2 that include the LUNA and FUN modules. Additional minor improvements were made to the implementation of plant hydraulic stress, snow aerosols, snow and soil hydrology, urban, phenology, and the lake model. Additionally the land-only configuration of the model is set to only run through 2013 with the GSWP3 forcing because of an error in the forcing data for 2014. More information about these changes, bug fixes and ongoing work can be found at the CTSM github repository.
+
+3.Ocean
+Introduction
+The ocean component of the CESM2 is the Parallel Ocean Program version 2 (POP2). This model is based on the POP version 2.1 of the Los Alamos National Laboratory; however, it includes many physical and software developments incorporated by the members of the Ocean Model Working Group detailed in the CESM2 What's New page.
+
+New Ocean Component
+A new ocean component model based on the Modular Ocean Model version 6 (MOM6) has been incorporated into CESM and is anticipated to replace POP2 as the default ocean component in CESM3. An early functional release of the MOM6 ocean component is being made available to users beginning with CESM2.2. Instructions for using MOM6 in CESM are available on the MOM_interface Github Wiki page.
+
+
+CESM(Community Earth System Model)은 지구의 과거, 현재 및 미래 기후 상태에 대한 최신 컴퓨터 시뮬레이션을 제공하는 완전 결합된 지구 기후 모델입니다.
+
+CESM2는 최신 릴리스이며 CMIP6(Coupled Model Intercomparison Project Phase 6) 실험 구성에 대한 지원을 포함합니다.
+
+결합 모델 상호 비교 프로젝트 6단계
+
+CESM2.2는 CESM2 제품군의 새로운 개발 버전으로, 여러 구성 요소 모델에 많은 새로운 개발이 포함되어 있습니다. 이러한 새로운 개선 사항 중 일부는 다음과 같습니다.
+
+1. 분위기 CAM
+모델 개발은 AMWG(Atmosphere Model Working Group)가 주도했습니다. 전체 대기 커뮤니티 기후 모델(WACCM, CAM 기능)의 개발은 전체 대기 실무 그룹(WAWG)이 주도했습니다. CAM-Chem의 개발은 CCWG(Chemistry Climate Working Group)가 주도했습니다.
+
+CAM(Community Atmosphere Model)은 NCAR에서 기상 및 기후 연구 커뮤니티를 위해 개발한 일련의 지구 대기 모델 중 최신 모델입니다. CAM은 또한 CCSM(Community Climate System Model)의 대기 구성 요소 역할을 합니다.
+
+-AMWG
+AMWG(Atmosphere Model Working Group)는 CESM(Community Earth System Model)을 사용하여 대기 과학 연구에 참여하는 대학 및 연방 기관의 광범위한 연구자 모음입니다. 가장 중요한 목표는 더 넓은 CESM 커뮤니티에서 사용할 새 버전을 주기적으로 제공하기 위해 커뮤니티 분위기 모델(CAM)을 지속적으로 개발하는 것입니다.
+
+-WACCM
+WACCM(Whole Atmosphere Community Climate Model)은 지표에서 열권까지의 고도 범위를 포괄하는 포괄적인 수치 모델입니다. WACCM의 개발은 NCAR 커뮤니티 지구 시스템 모델(CESM)을 사용하여 HAO의 상부 대기 모델링, ACOM의 중간 대기 모델링 및 대기 화학, CGD의 대류권 역학 모델링의 특정 측면을 통합하는 부서 간 협업입니다. 일반적인 수치 프레임워크로. WACCM-X는 WACCM을 상부 열권으로 확장하고 전리층에 중요한 프로세스를 포함합니다.
+
+-CAM-켐
+CAM-chem에는 이제 MUSICA-V0(https://wiki.ucar.edu/display/MUSICA)라고도 하는 스펙트럼 요소 동적 코어(CAM-chem-SE-RR)를 사용하여 지역적으로 정제된 그리드를 실행할 수 있는 기능이 포함됩니다. /뮤시카+홈). CAM-chem 구성 요소는 이제 균일 그리드 SE 및 CSLAM이 있는 SE에 대한 해상도를 지원합니다. 지정된 역학 구성 요소 외에 MERRA 기상 재분석에 대한 물리적 측면 넛지용 구성 요소가 이제 제공됩니다. 대류 구름에 의한 에어로졸의 젖은 소거가 업데이트되었습니다. 기상 종의 습식 및 건식 증착을 결정하는 데 사용되는 헨리의 법칙 상수가 업데이트되었습니다. MOZART-TS2 케미스트리를 사용하기 위한 컴세트가 포함되어 있습니다.
+
+2.이 릴리스의 일부인 새로운 토지 기능은 다음과 같습니다.
+
+FV3 그리드 및 CAM에 필요한 여러 가지 가변 해상도 그리드, 일부에 대한 초기 조건 파일 제공
+다른 CESM 구성 요소와 일치하는 CIME 업데이트 및 NUOPC 한도 도입
+두 가지 바이오에너지 작물(스위치그래스와 억새)을 시뮬레이션할 수 있는 옵션을 허용하는 새로운 매개변수화
+하위 규모 식생 유형의 설정 수를 보다 일반적으로 사용하기 위한 지원 추가
+하드 코딩된 매개변수를 CTSM 매개변수 파일로 이동
+수치 기상 예측(NWP)에서 CTSM 사용 지원
+또한 릴리스에서는 LUNA 및 FUN 모듈을 포함하는 이전 버전의 CESM2 및 릴리스된 CLM5.0 코드에 있는 몇 가지 답변 변경 버그 수정을 해결합니다. 식물 수력 응력, 눈 에어로졸, 눈 및 토양 수문학, 도시, 계절학, 호수 모델의 구현에 대한 추가적인 사소한 개선이 이루어졌습니다. 또한 모델의 토지 전용 구성은 2014년 강제 실행 데이터의 오류로 인해 GSWP3 강제 실행으로 2013년까지만 실행되도록 설정되었습니다.
+
+소개
+CESM2의 해양 구성 요소는 병렬 해양 프로그램 버전 2(POP2)입니다. 이 모델은 Los Alamos 국립 연구소의 POP 버전 2.1을 기반으로 합니다. 그러나 여기에는 CESM2 What's New 페이지에 자세히 설명된 Ocean Model Working Group의 구성원이 통합한 많은 물리적 및 소프트웨어 개발이 포함됩니다.
+
+뉴오션 컴포넌트
+모듈식 해양 모델 버전 6(MOM6)을 기반으로 하는 새로운 해양 구성 요소 모델이 CESM에 통합되었으며 CESM3의 기본 해양 구성 요소로 POP2를 대체할 것으로 예상됩니다. MOM6 해양 구성 요소의 초기 기능 릴리스는 CESM2.2부터 사용자에게 제공됩니다. CESM에서 MOM6을 사용하기 위한 지침은 MOM_interface Github Wiki 페이지에서 사용할 수 있습니다.
